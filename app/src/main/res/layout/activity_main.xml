@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="194dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="148dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="111dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="48dp"
+        android:onClick="backButtonClick"
+        android:text="@string/backButton"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/forwardButtonforwardButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/forwardButtonforwardButton"
+        android:layout_width="111dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="267dp"
+        android:onClick="forwardButtonClick"
+        android:text="@string/forwardButton"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="99dp"
+        app:layout_constraintBottom_toTopOf="@+id/forwardButtonforwardButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
